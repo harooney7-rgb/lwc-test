@@ -5,5 +5,6 @@ public class GetAssets {
         List<Talent_Asset__c> assets= [SELECT Name, Asset_Status__c, Asset_Type__c from Talent_Asset__c];
         system.debug(assets);
         return assets;
+        
     }
 }
