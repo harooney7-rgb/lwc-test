@@ -1,0 +1,12 @@
+<template>
+
+    <input onchange={writeName} type="text" placeholder="Enter Employee Name">
+    <br>
+    <button onclick={checkEmployeeExist}>Check</button>
+    <br>
+ <template for:each={assets} for:item="asset">
+<div key={asset.Id} class="nameCard">
+    {asset.Name},{asset.Asset_Type__c},{asset.Asset_Status__c}
+</div>
+
+</template>

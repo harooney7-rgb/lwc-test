@@ -1,0 +1,7 @@
+<template>
+    <h1>Todo List 1</h1>
+
+    <template for:each={todos} for:item="todo">
+<div key={todo.id}>{todo.id}{todo.title}{todo.completed} </div>
+    
+</template>
